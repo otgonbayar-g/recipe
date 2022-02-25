@@ -1,9 +1,6 @@
-// const arr = [23, 44, 12];
+import query from './model/Search';
+import { add, multipy as multi } from './view/searchView';
 
-// let myfunc = a => {
-//     console.log(`Too : ${a}`);
-// }
-
-// const arr2 = [...arr, 44, 1223];
-
-// myfunc(arr2);
+console.log(`Хайлт : ${query}`);
+console.log(`Хоёр тооны нийлбэр : ${add(4, 6)}`);
+console.log(`Хоёр тооны үржвэр : ${multi(4, 6)}`);

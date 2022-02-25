@@ -23,6 +23,7 @@
     "webpack-dev-server": "^4.7.4"
   },
   "dependencies": {
-    "@babel/polyfill": "^7.12.1"
+    "@babel/polyfill": "^7.12.1",
+    "loadash": "^1.0.0"
   }
 }

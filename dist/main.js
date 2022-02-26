@@ -1,1 +1,0 @@
-(()=>{"use strict";console.log("Хайлт : ".concat("pizza")),console.log("Хоёр тооны нийлбэр : ".concat(10)),console.log("Хоёр тооны үржвэр : ".concat(24))})();

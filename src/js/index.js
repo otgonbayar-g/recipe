@@ -1,5 +1,8 @@
 require("@babel/polyfill");
+
 import Search from "./model/Search";
+import Recipe from "./model/Recipe";
+
 import { elements, renderLoader, clearLoader } from "./view/base";
 import * as searchView from './view/searchView';
 
@@ -40,3 +43,16 @@ elements.searchForm.addEventListener("submit", (e) => {
   e.preventDefault();
   controlSearch();
 });
+
+elements.pageButtons.addEventListener("click", (e) => {
+  const btn = e.target.closest('.btn-inline');
+
+  if(btn) {
+    const gotoPageNum = parseInt(btn.dataset.goto, 10);
+    searchView.clearSearchResult();
+    searchView.renderRecipes(state.search.result, gotoPageNum);
+  }
+});
+
+const r = new Recipe(47746);
+r.getRecipe();
